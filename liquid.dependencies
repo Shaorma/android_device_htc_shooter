@@ -1,0 +1,26 @@
+[
+    {
+        "remote": "ls",
+        "repository": "android_kernel_shooter",
+        "target_path": "kernel/htc/shooter",
+        "revision": "kitkat"
+    },
+    {
+        "remote": "ls",
+        "repository": "android_device_htc_msm8660-common",
+        "target_path": "device/htc/msm8660-common",
+        "revision": "kitkat"
+    },
+	{
+        "remote": "ls",
+        "repository": "android_vendor_htc",
+        "target_path": "vendor/htc",
+        "revision": "kitkat"
+    },
+    {
+        "remote": "ls",
+        "repository": "android_hardware_qcom_media-legacy",
+        "target_path": "hardware/qcom/media-legacy",
+        "revision": "kitkat"
+    }
+]
