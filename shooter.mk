@@ -117,6 +117,10 @@ PRODUCT_PACKAGES += \
     setup_fs \
     libinit_msm
 
+# OTA ID
+PRODUCT_PROPERTY_OVERRIDES += \
+    otaupdater.otaid=liquidshooter
+
 # WiMAX support
 #PRODUCT_PACKAGES += \
 #    CMWimaxSettings
