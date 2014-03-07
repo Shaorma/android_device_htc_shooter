@@ -61,7 +61,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.product.model", "Evo 3D CDMA");
         property_set("ro.product.device", "shooter");
         property_set("ro.carrier", "Sprint");
-        property_set("gsm.operator.alpha", "sprint"
+        property_set("gsm.operator.alpha", "sprint");
         property_set("gsm.operator.numeric", "310120");
         property_set("ro.cdma.home.operator.alpha", "sprint");
         property_set("ro.cdma.home.operator.numeric", "310120");
@@ -72,7 +72,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.product.model", "Evo 3D CDMA");
         property_set("ro.product.device", "shooter");
         property_set("ro.carrier", "Sprint");
-        property_set("gsm.operator.alpha", "sprint"
+        property_set("gsm.operator.alpha", "sprint");
         property_set("gsm.operator.numeric", "310120");
         property_set("ro.cdma.home.operator.alpha", "sprint");
         property_set("ro.cdma.home.operator.numeric", "310120");
@@ -83,7 +83,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.product.model", "Evo 3D CDMA");
         property_set("ro.product.device", "shooter");
         property_set("ro.carrier", "Sprint");
-        property_set("gsm.operator.alpha", "sprint"
+        property_set("gsm.operator.alpha", "sprint");
         property_set("gsm.operator.numeric", "310120");
         property_set("ro.cdma.home.operator.alpha", "sprint");
         property_set("ro.cdma.home.operator.numeric", "310120");
@@ -94,7 +94,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.product.model", "Evo 3D CDMA");
         property_set("ro.product.device", "shooter");
         property_set("ro.carrier", "Sprint");
-        property_set("gsm.operator.alpha", "sprint"
+        property_set("gsm.operator.alpha", "sprint");
         property_set("gsm.operator.numeric", "310120");
         property_set("ro.cdma.home.operator.alpha", "sprint");
         property_set("ro.cdma.home.operator.numeric", "310120");
@@ -105,7 +105,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.product.model", "Evo V 4G");
         property_set("ro.product.device", "shootervm");
         property_set("ro.carrier", "Virgin Mobile");
-        property_set("gsm.operator.alpha", "Virgin Mobile"
+        property_set("gsm.operator.alpha", "Virgin Mobile");
         property_set("gsm.operator.numeric", "311490");
         property_set("ro.cdma.home.operator.alpha", "Virgin Mobile");
         property_set("ro.cdma.home.operator.numeric", "311490");
@@ -116,12 +116,12 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.product.model", "Evo V 4G");
         property_set("ro.product.device", "shootervm");
         property_set("ro.carrier", "Virgin Mobile");
-        property_set("gsm.operator.alpha", "Virgin Mobile"
+        property_set("gsm.operator.alpha", "Virgin Mobile");
         property_set("gsm.operator.numeric", "311490");
         property_set("ro.cdma.home.operator.alpha", "Virgin Mobile");
         property_set("ro.cdma.home.operator.numeric", "311490");
     }
     property_get("ro.product.device", device);
     strlcpy(devicename, device, sizeof(devicename));
-    ERROR("Found carrier id: %s hardware:%s model no: %s Setting build properties for %s device\n", bootloader, devicename);
+    ERROR("Found bootloader:%s Setting build properties for %s device\n", bootloader, devicename);
 }
