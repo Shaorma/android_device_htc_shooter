@@ -115,7 +115,9 @@ PRODUCT_PACKAGES += \
     make_ext4fs \
     e2fsck \
     setup_fs \
-    libinit_msm
+
+# ADB
+ADDITIONAL_DEFAULT_PROPERTIES+=  ro.adb.secure=0
 
 # OTA ID
 PRODUCT_PROPERTY_OVERRIDES += \
