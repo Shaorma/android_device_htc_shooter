@@ -63,8 +63,10 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.carrier", "Sprint");
         property_set("gsm.operator.alpha", "sprint");
         property_set("gsm.operator.numeric", "310120");
+        property_set("gsm.operator.iso-country", "us");
         property_set("gsm.sim.operator.alpha", "sprint");
         property_set("gsm.sim.operator.numeric", "310120");
+        property_set("gsm.sim.operator.iso-country", "us");
         property_set("ro.cdma.home.operator.alpha", "sprint");
         property_set("ro.cdma.home.operator.numeric", "310120");
     }else if (ISMATCH(bootloader, ("1.40.1100"))) {
@@ -76,8 +78,10 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.carrier", "Sprint");
         property_set("gsm.operator.alpha", "sprint");
         property_set("gsm.operator.numeric", "310120");
+        property_set("gsm.operator.iso-country", "us");
         property_set("gsm.sim.operator.alpha", "sprint");
         property_set("gsm.sim.operator.numeric", "310120");
+        property_set("gsm.sim.operator.iso-country", "us");
         property_set("ro.cdma.home.operator.alpha", "sprint");
         property_set("ro.cdma.home.operator.numeric", "310120");
     }else if (ISMATCH(bootloader, ("1.40.0000"))) {
@@ -89,8 +93,10 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.carrier", "Sprint");
         property_set("gsm.operator.alpha", "sprint");
         property_set("gsm.operator.numeric", "310120");
+        property_set("gsm.operator.iso-country", "us");
         property_set("gsm.sim.operator.alpha", "sprint");
         property_set("gsm.sim.operator.numeric", "310120");
+        property_set("gsm.sim.operator.iso-country", "us");
         property_set("ro.cdma.home.operator.alpha", "sprint");
         property_set("ro.cdma.home.operator.numeric", "310120");
     }else if (ISMATCH(bootloader, ("1.40.1000"))) {
@@ -102,8 +108,10 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.carrier", "Sprint");
         property_set("gsm.operator.alpha", "sprint");
         property_set("gsm.operator.numeric", "310120");
+        property_set("gsm.operator.iso-country", "us");
         property_set("gsm.sim.operator.alpha", "sprint");
         property_set("gsm.sim.operator.numeric", "310120");
+        property_set("gsm.sim.operator.iso-country", "us");
         property_set("ro.cdma.home.operator.alpha", "sprint");
         property_set("ro.cdma.home.operator.numeric", "310120");
     }else if (ISMATCH(bootloader, ("1.50.5050"))) {
@@ -115,8 +123,10 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.carrier", "Virgin Mobile");
         property_set("gsm.operator.alpha", "Virgin Mobile");
         property_set("gsm.operator.numeric", "311490");
+        property_set("gsm.operator.iso-country", "us");
         property_set("gsm.sim.operator.alpha", "Virgin Mobile");
         property_set("gsm.sim.operator.numeric", "311490");
+        property_set("gsm.sim.operator.iso-country", "us");
         property_set("ro.cdma.home.operator.alpha", "Virgin Mobile");
         property_set("ro.cdma.home.operator.numeric", "311490");
     }else if (ISMATCH(bootloader, ("1.50.0000"))) {
@@ -128,8 +138,10 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.carrier", "Virgin Mobile");
         property_set("gsm.operator.alpha", "Virgin Mobile");
         property_set("gsm.operator.numeric", "311490");
+        property_set("gsm.operator.iso-country", "us");
         property_set("gsm.sim.operator.alpha", "Virgin Mobile");
         property_set("gsm.sim.operator.numeric", "311490");
+        property_set("gsm.sim.operator.iso-country", "us");
         property_set("ro.cdma.home.operator.alpha", "Virgin Mobile");
         property_set("ro.cdma.home.operator.numeric", "311490");
     }
