@@ -109,8 +109,8 @@ PRODUCT_PACKAGES += \
 
 # Kernel init.d script
 PRODUCT_COPY_FILES += \
-    device/htc/shooter/configs/99kernel:system/etc/init.d/99kernel \
-    device/htc/shooter/configs/00_frandom:system/etc/init.d/00_frandom
+    device/htc/shooter/config/99kernel:system/etc/init.d/99kernel \
+    device/htc/shooter/config/00_frandom:system/etc/init.d/00_frandom
 
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
