@@ -7,7 +7,6 @@ $(call inherit-product, device/htc/shooter/shooter.mk)
 # Device naming
 PRODUCT_DEVICE := shooter
 PRODUCT_NAME := liquid_shooter
-PRODUCT_BRAND := sprint
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_MODEL := Evo 3D CDMA
 

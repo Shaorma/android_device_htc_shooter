@@ -60,6 +60,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "2.95.651.6 CL560205 release-keys");
         property_set("ro.product.model", "Evo 3D CDMA");
         property_set("ro.product.device", "shooter");
+        property_set("ro.product.brand", "sprint");
         property_set("ro.carrier", "Sprint");
         property_set("gsm.operator.alpha", "sprint");
         property_set("gsm.operator.numeric", "310120");
@@ -73,6 +74,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "2.95.651.6 CL560205 release-keys");
         property_set("ro.product.model", "Evo 3D CDMA");
         property_set("ro.product.device", "shooter");
+        property_set("ro.product.brand", "sprint");
         property_set("ro.carrier", "Sprint");
         property_set("gsm.operator.alpha", "sprint");
         property_set("gsm.operator.numeric", "310120");
@@ -86,6 +88,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "2.95.651.6 CL560205 release-keys");
         property_set("ro.product.model", "Evo 3D CDMA");
         property_set("ro.product.device", "shooter");
+        property_set("ro.product.brand", "sprint");
         property_set("ro.carrier", "Sprint");
         property_set("gsm.operator.alpha", "sprint");
         property_set("gsm.operator.numeric", "310120");
@@ -99,6 +102,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "2.95.651.6 CL560205 release-keys");
         property_set("ro.product.model", "Evo 3D CDMA");
         property_set("ro.product.device", "shooter");
+        property_set("ro.product.brand", "sprint");
         property_set("ro.carrier", "Sprint");
         property_set("gsm.operator.alpha", "sprint");
         property_set("gsm.operator.numeric", "310120");
@@ -112,6 +116,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "1.13.652.2_R2 CL372137 release-keys");
         property_set("ro.product.model", "Evo V 4G");
         property_set("ro.product.device", "shootervm");
+        property_set("ro.product.brand", "virgin");
         property_set("ro.carrier", "Virgin Mobile");
         property_set("gsm.operator.alpha", "Virgin Mobile");
         property_set("gsm.operator.numeric", "311490");
@@ -125,6 +130,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "1.13.652.2_R2 CL372137 release-keys");
         property_set("ro.product.model", "Evo V 4G");
         property_set("ro.product.device", "shootervm");
+        property_set("ro.product.brand", "virgin");
         property_set("ro.carrier", "Virgin Mobile");
         property_set("gsm.operator.alpha", "Virgin Mobile");
         property_set("gsm.operator.numeric", "311490");
