@@ -123,7 +123,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.fingerprint", "virgin_mobile/htc_shooter/shooter:4.0.3/IML74K/372137.2:user/release-keys");
         property_set("ro.build.description", "1.13.652.2_R2 CL372137 release-keys");
         property_set("ro.product.model", "Evo V 4G");
-        property_set("ro.product.device", "shootervm");
+        property_set("ro.product.device", "shooter");
         property_set("ro.product.brand", "virgin");
         property_set("ro.carrier", "Virgin Mobile");
         property_set("gsm.operator.alpha", "Virgin Mobile");
@@ -139,7 +139,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.fingerprint", "virgin_mobile/htc_shooter/shooter:4.0.3/IML74K/372137.2:user/release-keys");
         property_set("ro.build.description", "1.13.652.2_R2 CL372137 release-keys");
         property_set("ro.product.model", "Evo V 4G");
-        property_set("ro.product.device", "shootervm");
+        property_set("ro.product.device", "shooter");
         property_set("ro.product.brand", "virgin");
         property_set("ro.carrier", "Virgin Mobile");
         property_set("gsm.operator.alpha", "Virgin Mobile");
