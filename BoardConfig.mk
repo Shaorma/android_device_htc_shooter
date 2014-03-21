@@ -45,9 +45,6 @@ BOARD_USE_NEW_LIBRIL_HTC := true
 #COMMON_GLOBAL_CFLAGS += -DBOARD_HAVE_SQN_WIMAX
 #BOARD_HAVE_SQN_WIMAX := true
 
-#Rom toolchain
-LINARO_GCC_VERSION := 4.8
-
 # Kernel Details
 TARGET_KERNEL_CONFIG := shooter_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0 androidboot.hardware=shooter no_console_suspend=1
