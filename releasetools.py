@@ -21,10 +21,11 @@ import shutil
 
 def FullOTA_Assertions(info):
   info.script.AppendExtra('assert(getprop("ro.bootloader") == "1.04.2000" || getprop("ro.bootloader") == "1.50.5050" || getprop("ro.bootloader") == "1.40.1100"|| getprop("ro.bootloader") == "1.30.0000" || getprop("ro.bootloader") == "1.40.0000" || getprop("ro.bootloader") == "1.50.0000" || getprop("ro.bootloader") == "1.40.1000");')
-  info.script.AppendExtra('run_program("/sbin/busybox", "mount", "/data");')
-  info.script.AppendExtra('delete_recursive("/data/wimax/log");')
-  info.script.AppendExtra('run_program("/sbin/busybox", "mkdir", "/data/wimax");')
-  info.script.AppendExtra('run_program("/sbin/busybox", "mkdir", "/data/wimax/log");')
-  info.script.AppendExtra('run_program("/sbin/busybox", "chattr", "+i", "/data/wimax/log");')
-  info.script.AppendExtra('unmount("/data");')
-  
+
+def FullOTA_InstallEnd(info):
+  info.script.AppendExtra('ifelse(is_substring("1.04.2000", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/blobs/sprint/* /system/"));')
+  info.script.AppendExtra('ifelse(is_substring("1.40.1100", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/blobs/sprint/* /system/"));')
+  info.script.AppendExtra('ifelse(is_substring("1.40.0000", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/blobs/sprint/* /system/"));')
+  info.script.AppendExtra('ifelse(is_substring("1.40.1000", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/blobs/sprint/* /system/"));')
+  info.script.AppendExtra('ifelse(is_substring("1.50.5050", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/blobs/virgin/* /system/"));')
+  info.script.AppendExtra('ifelse(is_substring("1.50.0000", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/blobs/virgin/* /system/"));')

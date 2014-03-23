@@ -37,33 +37,6 @@ PRODUCT_COPY_FILES += \
     device/htc/shooter/recovery/sbin/detect_key:recovery/root/sbin/detect_key \
     device/htc/shooter/recovery/sbin/htcbatt:recovery/root/sbin/htcbatt
 
-## dsp Audio
-PRODUCT_COPY_FILES += \
-    device/htc/shooter/dsp/AIC3254_REG.csv:system/etc/AIC3254_REG.csv \
-    device/htc/shooter/dsp/AIC3254_REG_DualMic.csv:system/etc/AIC3254_REG_DualMic.csv \
-    device/htc/shooter/dsp/AdieHWCodec.csv:system/etc/AdieHWCodec.csv \
-    device/htc/shooter/dsp/CodecDSPID.txt:system/etc/CodecDSPID.txt \
-    device/htc/shooter/dsp/AudioBTID.csv:system/etc/AudioBTID.csv \
-    device/htc/shooter/dsp/TPA2051_CFG.csv:system/etc/TPA2051_CFG.csv \
-    device/htc/shooter/dsp/soundimage/Sound_FM_HP.txt:system/etc/soundimage/Sound_FM_HP.txt \
-    device/htc/shooter/dsp/soundimage/Sound_FM_SPK.txt:system/etc/soundimage/Sound_FM_SPK.txt \
-    device/htc/shooter/dsp/soundimage/Sound_Original.txt:system/etc/soundimage/Sound_Original.txt \
-    device/htc/shooter/dsp/soundimage/Sound_Original_MFG.txt:system/etc/soundimage/Sound_Original_MFG.txt \
-    device/htc/shooter/dsp/soundimage/Sound_Original_Recording.txt:system/etc/soundimage/Sound_Original_Recording.txt \
-    device/htc/shooter/dsp/soundimage/Sound_Original_SPK.txt:system/etc/soundimage/Sound_Original_SPK.txt \
-    device/htc/shooter/dsp/soundimage/Sound_Phone_Original.txt:system/etc/soundimage/Sound_Phone_Original.txt \
-    device/htc/shooter/dsp/soundimage/Sound_Phone_Original_HP.txt:system/etc/soundimage/Sound_Phone_Original_HP.txt \
-    device/htc/shooter/dsp/soundimage/Sound_Phone_Original_REC.txt:system/etc/soundimage/Sound_Phone_Original_REC.txt \
-    device/htc/shooter/dsp/soundimage/Sound_Phone_Original_SPK.txt:system/etc/soundimage/Sound_Phone_Original_SPK.txt \
-    device/htc/shooter/dsp/soundimage/Sound_Rec_Landscape.txt:system/etc/soundimage/Sound_Rec_Landscape.txt \
-    device/htc/shooter/dsp/soundimage/Sound_Rec_mono.txt:system/etc/soundimage/Sound_Rec_mono.txt \
-    device/htc/shooter/dsp/soundimage/Sound_Recording.txt:system/etc/soundimage/Sound_Recording.txt \
-    device/htc/shooter/dsp/soundimage/Sound_Rec_Portrait.txt:system/etc/soundimage/Sound_Rec_Portrait.txt \
-    device/htc/shooter/dsp/soundimage/Sound_Rec_Voice_record.txt:system/etc/soundimage/Sound_Rec_Voice_record.txt \
-    device/htc/shooter/dsp/soundimage/srs_geq10.cfg:system/etc/soundimage/srs_geq10.cfg \
-    device/htc/shooter/dsp/soundimage/srsfx_trumedia_51.cfg:system/etc/soundimage/srsfx_trumedia_51.cfg \
-    device/htc/shooter/dsp/soundimage/srsfx_trumedia_movie.cfg:system/etc/soundimage/srsfx_trumedia_movie.cfg \
-    device/htc/shooter/dsp/soundimage/srsfx_trumedia_music.cfg:system/etc/soundimage/srsfx_trumedia_music.cfg
 
 # keylayouts
 PRODUCT_COPY_FILES += \
@@ -83,7 +56,6 @@ PRODUCT_COPY_FILES += \
 
 # Device Specific Firmware
 PRODUCT_COPY_FILES += \
-    device/htc/shooter/firmware/default_bak.acdb:system/etc/firmware/default_bak.acdb \
     device/htc/msm8660-common/firmware/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd
 
 # Permissions
@@ -112,6 +84,10 @@ PRODUCT_COPY_FILES += \
     device/htc/shooter/config/99kernel:system/etc/init.d/99kernel \
     device/htc/shooter/config/00_frandom:system/etc/init.d/00_frandom
 
+# Virgin voicemail
+PRODUCT_COPY_FILES += \
+    device/htc/shooter/config/voicemail-conf.xml:system/blobs/virgin/etc/voicemail-conf.xml
+
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 
@@ -136,10 +112,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enable_bypass=1 \
     dalvik.vm.lockprof.threshold=500 \
-    ro.com.google.locationfeatures=1 \
     dalvik.vm.dexopt-flags=m=y \
-    ro.vold.umsdirtyratio=20 \
-    htc.audio.alt.enable=1 \
+    htc.audio.alt.enable=0 \
     htc.audio.hac.enable=0
 
 # Inherite make files
