@@ -1,3 +1,5 @@
+PRODUCT_COPY_FILES += device/htc/shooter/config/audio_effects.conf:system/etc/audio_effects.conf
+
 # Inherit some common Liquid stuff.
 $(call inherit-product, vendor/liquid/config/common_phone.mk)
 
