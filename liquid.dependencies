@@ -1,12 +1,12 @@
 [
     {
-        "remote": "ls",
+        "remote": "lsd",
         "repository": "android_kernel_shooter",
         "target_path": "kernel/htc/shooter",
         "revision": "kitkat"
     },
     {
-        "remote": "ls",
+        "remote": "lsd",
         "repository": "android_device_htc_msm8660-common",
         "target_path": "device/htc/msm8660-common",
         "revision": "kitkat"
