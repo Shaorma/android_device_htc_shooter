@@ -31,7 +31,7 @@
 -include device/htc/msm8660-common/bcmdhd.mk
 
 # inherit from the proprietary version
--include vendor/htc/shooter/BoardConfigVendor.mk
+#-include vendor/htc/shooter/BoardConfigVendor.mk
 
 TARGET_SPECIFIC_HEADER_PATH := device/htc/shooter/include
 
@@ -52,10 +52,7 @@ BOARD_KERNEL_BASE := 0x48000000
 BOARD_KERNEL_PAGE_SIZE := 2048
 
 # Kernel
-TARGET_KERNEL_SOURCE   := kernel/htc/shooter
-
-TARGET_GCC_VERSION_ARM := 4.8-sm
-TARGET_GCC_VERSION_AND := 4.8-sm
+TARGET_KERNEL_SOURCE   := kernel/htc/shooteru
 
 #ION
 TARGET_USES_ION := true
@@ -100,7 +97,7 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 5242880
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16776192
 
 # Custom lun file path
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun0/file"
 
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_FLASH_BLOCK_SIZE := 262144
@@ -112,10 +109,12 @@ BOARD_HAS_NO_MISC_PARTITION := true
 TARGET_RECOVERY_FSTAB := device/htc/shooter/ramdisk/fstab.shooter
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_888"
 TARGET_RECOVERY_UI_LIB := librecovery_ui_shooter
-TARGET_RECOVERY_INITRC := device/htc/shooter/recovery/init.rc
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_USES_MMCUTILS := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
 BOARD_CUSTOM_GRAPHICS := ../../../device/htc/shooteru/recovery/graphics.c
 BOARD_RECOVERY_SWIPE := true
+
+#Philz
+TARGET_COMMON_NAME := HTC EVO 3D CDMA

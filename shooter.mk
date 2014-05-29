@@ -29,13 +29,15 @@ PRODUCT_COPY_FILES += \
     device/htc/shooter/ramdisk/ueventd.shooter.rc:root/ueventd.shooter.rc \
     device/htc/shooter/ramdisk/fstab.shooter:root/fstab.shooter
 
-## recovery and custom charging
-PRODUCT_COPY_FILES += \
-    device/htc/shooter/recovery/sbin/choice_fn:recovery/root/sbin/choice_fn \
-    device/htc/shooter/recovery/sbin/power_test:recovery/root/sbin/power_test \
-    device/htc/shooter/recovery/sbin/offmode_charging:recovery/root/sbin/offmode_charging \
-    device/htc/shooter/recovery/sbin/detect_key:recovery/root/sbin/detect_key \
-    device/htc/shooter/recovery/sbin/htcbatt:recovery/root/sbin/htcbatt
+# recovery and custom charging
+PRODUCT_PACKAGES += \
+    init.recovery.shooter.rc \
+    twrp.fstab \
+    choice_fn \
+    detect_key \
+    offmode_charging \
+    power_test \
+    htcbatt
 
 
 # keylayouts
@@ -120,5 +122,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
-# call the proprietary setup
-$(call inherit-product, vendor/htc/shooter/shooter-vendor.mk)
