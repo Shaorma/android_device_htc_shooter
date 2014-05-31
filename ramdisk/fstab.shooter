@@ -15,3 +15,5 @@
 # USB Disk
 /devices/platform/msm_hsusb.0/usb1    auto  auto  defaults    voldmanaged=usbdisk:auto
 
+#sd-ext
+/dev/block/mmcblk1p2  /sd-ext   ext4  rw   defaults
